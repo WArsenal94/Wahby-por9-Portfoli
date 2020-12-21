@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://kit.fontawesome.com/aa5632ef5d.js" crossorigin="anonymous"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 30px;
+  background-color: #03a3df;
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 50%;
+  height: 300px; /* only for demonstration, should be removed */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 50%;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+
+
+
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="box1">
+    <div class="head1-header">
+
+      <img src="white.png" alt="logo" />
+  </div>
+    <div class="head2-header">
+
+    <h1>Straight to the Point Archery</h1>
+  </div>
+  <div class="head3">
+    <nav>
+      <a style="font-size: 20px;color:black" href="About-us.html">Main</a>
+
+      <a style="font-size: 20px;color:black" href="index.html">Classes</a>
+      <a style="font-size: 20px;color:black" href="Instructors.html">Instructors</a>
+          </nav>
+
+        </div>
+      </div>
+
+
+
+
+          <link rel="stylesheet" href="Fonts.css">
+  </header>
+
+
+<div class=box1-about>
+  <div class=head1-about>
+
+<h1>About Us</h1>
+
+  <p>Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.  Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.
+
+Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field. 	Giap Nguyen started Straight to the Point Archery in 2005. He's an avid and accomplished archer himself, having competed with the United States Archery Team in the 2000 Summer Olympics. He has three children, and  started Straight to the Point in part because he was not satisfied with the archery eduction options for them in Tacoma. After The Hunger Games books and movies came out, he noticed a surge in popularity of archery among young people, especially young women, and the business has been booming ever since.
+</p>
+
+
+<h1>Nondiscriminatory Policy:</h1>
+<p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.
+  </p>
+</div>
+<div class=grid3>
+
+  <video width="320" height="240" controls>
+    <source src="Archery.mp4" type="video/mp4">
+    <source src="Archery.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+  </video>
+</div>
+
+</div>
+
+
+  <footer>
+
+    <div class="container-footer">
+  <div class="element-row">
+    <div class="head2">
+    <img src="white.png" alt="logo" />
+  </div>
+
+    <div class="head1">
+    <p>
+  Straight to the Point Archery
+  528 Nock Point Ln
+  Tacoma, WA 98412
+  archery-education@example.com
+  (253)555-101</p>
+
+  </div>
+
+  <div class="head3">
+
+    <a href="https://www.linkedin.com/in/wahbyalqadhi/">   <i class="fab fa-linkedin fa-3x"></i></a>
+    <a href="https://www.linkedin.com/in/wahbyalqadhi/">   <i class="fab fa-facebook fa-3x"></i></a>
+    <a href="https://www.linkedin.com/in/wahbyalqadhi/">   <i class="fab fa-instagram fa-3x"></i></a>
+
+
+
+
+  </div>
+
+
+
+  </div>
+  </div>
+
+  </footer>
+
+</body>
+</html>
