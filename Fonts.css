@@ -8,6 +8,14 @@ h2 {
   font-family: Martial;
   font-size: 24px;
 }
+header {
+  padding: 30px;
+  background-color: #03a3df;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .box1{
 
   height: 200px;
@@ -39,31 +47,61 @@ h2 {
 }
 .head1{
   width: auto;
-
+  grid-column: 1 / 2;
+  grid-row: 1/2;
 }
 
 .head2{
   width: auto;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
 }
-.head1-header{
-  float:left;
-  width: 30%;
 
+.head1-header{
+  width: 300px;
+  height: 150px;
+  display: flex;
+  grid-column: 1 / 2;
+  grid-row: 1/2;
 }
 
 .head2-header{
-  width: 40%;
-  float:left;
+  display: flex;
+  width: auto;
+  height: 150px;
+  justify-content: center;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+font-family: "oskar-inline", Sans-serif;
 }
 .head3{
-  width: 30%;
-  float:left;
+  display: flex;
+  width: auto;
+  height: 150px;
+  justify-content: flex-end;
+  grid-column: 3 / 4;
+  grid-row: 1/2;
 }
 .head3-header{
   width: 10%;
   float:left;
 }
 .head3-lessons{
+  grid-column: 3 / 4;
+  grid-row: 1/2;
+
+  width: auto;
+}
+.head4-lessons{
+  grid-column: 4 / 5;
+  grid-row: 1/2;
+
+  width: auto;
+}
+.head5-lessons{
+  grid-column: 5 / 6;
+  grid-row: 1/2;
+
   width: auto;
 }
 .container-instructor{
@@ -73,18 +111,26 @@ h2 {
 }
 .head1-instructor{
   width: auto;
-
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+height: auto;
 }
 
 .head2-instructor{
-  width: 50%;
-  float:left;
+  width: auto;
+  grid-column: 2 / 3;
+  grid-row: 1/2;
+  height: auto;
+
 }
 
 .head3-instructor{
   display: block;
-  width: 30%;
-  float:left;
+  width: auto;
+  grid-column: 3 / 4;
+  grid-row: 1/2;
+  height: auto;
+
 }
 
 footer {
@@ -139,4 +185,88 @@ text-align: center;
   min-height: 500px;
   grid-gap: 80px;
   width: auto;
+}
+.gridwrapper_5 {
+  display: grid;
+  grid-template-columns: 360px 360px 360px 360px;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  grid-gap: 1.5em;
+}
+.box1-contact{
+
+  height: auto;
+  width: auto;
+  justify-content: center;
+}
+.gridwrapper_header {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  grid-gap: 1.5em;
+}
+nav {
+  width: auto;
+font-family: "oskar";
+font-weight: bold;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+ input, button,  select {
+display: block;
+font-family: inherit;
+font-size: 100%;
+width: 300px;
+height: 25px;
+box-sizing: border-box;
+}
+textarea{
+  width: 400px;
+  height: 100px;
+
+}
+button{
+
+  width: auto;
+  height: auto;
+
+}
+input [type=submit]{
+
+  width: 100%;
+  background-color: #777;
+}
+fieldset input{
+
+  display: inline;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #777;
+}
+
+.gridwrapper_contactform{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  justify-content: center;
+  grid-auto-flow: row dense;
+  grid-gap: 1.5em;
+}
+.gridwrapper_5 input{
+
+}
+.gridwrapper_5 button{
+
+}
+.gridwrapper_5 textarea{
+
+}
+.wrapper-contact{
+  display: flex;
+  grid-column: 2;
+  justify-content:center;
+
 }
