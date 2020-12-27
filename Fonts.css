@@ -210,10 +210,14 @@ nav {
   width: auto;
 font-family: "oskar";
 font-weight: bold;
+margin: 2rem;
 }
 nav ul {
-  list-style-type: none;
-  padding: 0;
+  margin: 2rem;
+}
+nav a{
+  margin: 0.25rem;
+  padding: 0.25rem;
 }
  input, button,  select {
 display: block;
@@ -268,5 +272,12 @@ fieldset input{
   display: flex;
   grid-column: 2;
   justify-content:center;
-
+}
+.hidden{
+  position: relative;
+  left: -10000px;
+  top:auto;
+}
+.hidden:focus{
+  left: 0;
 }
